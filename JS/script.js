@@ -16,7 +16,7 @@
 
         for (const task of tasks) {
             exampleString += `
-            <li>
+            <li ${task.done ? "style = \"text-decoration: line-through\"" : ""}>
             ${task.content}
             </li>`;
         }
