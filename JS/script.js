@@ -26,11 +26,42 @@
 
 
 
-const init = () => {
+const addNewTasks = (newTasks) => {
 
-render();
+    if (newTasks === "") { return; }
+   
+    tasks.push({ content: newTasks },)
 
+    render();
 };
 
-init();
+
+
+
+    const onFormSubmit = (event) => {
+
+        event.preventDefault();
+
+        const newTasks = document.querySelector(".js-newTask").value.trim();
+
+
+        addNewTasks(newTasks);
+       
+    };
+
+
+    const init = () => {
+
+        render();
+
+        const formElement = document.querySelector(".js-form");
+
+        formElement.addEventListener("submit", onFormSubmit);
+
+
+
+
+    };
+
+    init();
 };
