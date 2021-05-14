@@ -1,0 +1,20 @@
+.form__button {
+    flex-basis: 30%;
+    background-color: teal;
+    color: white;
+    padding: 10px;
+    justify-content: flex-end;
+}
+
+.form__input {
+    margin-right: 20px;
+    flex-basis: 100%;
+    padding: 10px;
+    border-color: #ccc;
+}
+
+.form__input:active {
+    border-style: none;
+    border-color: #ccc;
+    border-width: 0.4px;
+}

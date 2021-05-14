@@ -1,0 +1,22 @@
+.element {
+    background-color: white;
+    border-color: #ccc;
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px;
+    max-width: 100%;
+}
+
+.element__item {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    flex-basis: 100%;
+
+}
+
+
+
+.element__item--form {
+    flex-direction: row;
+}
