@@ -38,10 +38,13 @@
 
         for (const task of tasks) {
             exampleString += `
-            <li class="list__item${task.done ? " list__item--done" : ""}">
-            <button class="js-remove">usuń</button>
-            <button class="js-done">zrobione</button>
-            ${task.content}
+            <li class="list">
+           
+            <button class="js-done list__button">✔️</button>
+
+          <div class="list__content${task.done ? " list__content--done " : ""}">  ${task.content} </div>
+
+            <button class="js-remove list__button--remove">⛔️</button>
             </li>`;
         };
 
